@@ -1,0 +1,127 @@
+DevOps is a software development and delivery process. 
+It emphasizes communication, collaboration between product management, software development, and operations professionals.
+
+##########################################
+##########						          ##########
+##########   Rules of DevOps    ##########
+##########						          ##########
+##########################################
+
+
+
+
+1. Plan
+2. Code
+3. Build 
+4. Test
+5. Release
+6. Deploy
+7. Operate
+8. Monitor
+
+##########################################
+##########						          ##########
+##########   DevOps Tools       ##########
+##########						          ##########
+##########################################
+
+
+01. QuerySurge
+02. Jenkins
+03. Vagrant
+04. PagerDuty
+05. Prometheus
+06. Ganglia
+07. Snort
+08. Splunk
+09. Nagios
+10. Chef
+11. Sumo Logic
+12. OverOps
+13. Consul
+14. Docker
+15. Stackify Retrace
+16. CFEngine
+17. Artifactory
+18. Capistrano
+19. Monit
+20. Supervisor
+21. Ansible
+22. Code Climate
+23. Icinga
+24. New Relic
+25. Juju
+26. ProductionMap
+27. Scalyr
+28. Rudder
+29. Puppet Enterprise
+30. UpGuard
+
+
+
+Development
+01. Docker
+02. Kubernetes
+03. Puppet Enterprise
+04. Ansible
+05. Gradle
+06. CodePen
+07. TypeScript
+08. Vue.js
+09. Angular
+10. Ionic 3
+11. Django
+
+Continuous Integration Devops Tools
+12. Bamboo
+13. TeamCity
+14. Chrome DevTools
+15. Sublime Text
+16. Sumo Logic
+17. Postman
+18. Git Extensions
+
+Deployment Applications
+19. Jenkins
+20. CA Release Automation
+21. XebiaLabs
+22. UrbanCode Deploy
+
+Operations & Devops Monitoring Tools
+23. Nagios
+24. New Relic
+25. Pager Duty
+26. Splunk
+27. Raygun
+28. Plutora
+29. Loom Systems
+30. Vagrant
+31. Prometheus
+32. Chef
+33. Git
+34. Clarizen
+35. Slack
+36. Basecamp
+37. Asana
+38. NPM
+39. GitKraken
+40 Visual Studio
+
+Planning
+41. GitLab
+42. Trello
+
+
+Continuous Feedback
+43. Mouseflow
+44. SurveyMonkey
+45. Jira Service Desk
+46. SurveyGizmo
+
+Issue Tracking
+47. Mantis Bug Tracker
+48. WhiteSource Bolt
+49. Snort
+50. OverOps
+51. Code Climate
+52. ZenDesk

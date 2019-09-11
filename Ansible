@@ -1,0 +1,17 @@
+#/bin/sh
+
+#Ansible Tutorial
+#GCP Host Details below 
+#All Centos OS 
+#Hostname, Zone, Internal IP, External IP 
+
+# server-1, asia-south1-c, 10.160.0.6 (nic0),34.93.124.245
+# client-1, asia-south1-c, 10.160.0.7 (nic0),35.200.210.83
+# client-2, asia-south1-c, 10.160.0.8 (nic0),34.93.190.198
+# client-3, asia-south1-c, 10.160.0.9 (nic0),35.200.198.84
+
+#Install Ansible 
+# sudo yum install ansible (redhat/centos/fedora)
+# sudo apt-get install ansible (Ubuntu)
+
+
