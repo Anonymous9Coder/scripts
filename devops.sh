@@ -1,18 +1,18 @@
 !/bin/sh
 
 ##############################################
-#####									 #####
-#####		GENERAL COMMANDS			 #####
-#####									 #####
+#####					 #####
+#####		GENERAL COMMANDS	 #####
+#####					 #####
 ##############################################
 
 #convert .pem to .ppk
 puttygen anonymous.pem -O private -o anonymous.ppk
 
 ##############################################
-#####									 #####
-#####		ANSIBLE COMMANDS			 #####
-#####									 #####
+#####					 #####
+#####		ANSIBLE COMMANDS	 #####
+#####					 #####
 ##############################################
 
 #1) Install Ansible 
@@ -39,12 +39,14 @@ ansible --version
 
 
 ##############################################
-#####									 #####
-#####			GIT	 COMMANDS			 #####
-#####									 #####
+#####					 #####
+#####		GIT COMMANDS		 #####
+#####					 #####
 ##############################################
 sudo yum update 
 sudo yum install git
+
+git clone https://github.com/Anonymous9Coder/scripts.git
 
 	#1. Initialize a local Git repository
 git init	
@@ -56,9 +58,52 @@ git clone ssh://git@github.com/[username]/[repository-name].git
     #
 
 ##############################################
-#####									 #####
-#####		JENKINS COMMANDS			 #####
-#####									 #####
+#####					 #####
+#####		JENKINS COMMANDS	 #####
+#####					 #####
 ##############################################
 
 # For Jenkins to test & work ,You need to have Java (JRE / JDK) 
+#Install JavaPackage 
+sudo yum install java-1.8.0-openjdk-devel
+
+#enable the Jenkins repository(import the GPG key using the following curl command)
+sudo curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+
+#add the repository to your system
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+#To Install the latest stable version of Jenkins
+sudo yum install jenkins
+
+#start the Jenkins service
+sudo systemctl start jenkins
+	#To Check status 
+	$"systemctl status jenkins"
+
+#You should recieve similar output 
+		#	jenkins.service - LSB: Jenkins Automation Server
+		#	Loaded: loaded (/etc/rc.d/init.d/jenkins; bad; vendor preset: disabled)
+		#	Active: active (running) since Thu 2018-09-20 14:58:21 UTC; 15s ago
+		#		Docs: man:systemd-sysv-generator(8)
+		#	Process: 2367 ExecStart=/etc/rc.d/init.d/jenkins start (code=exited, status=0/SUCCESS)
+		#	CGroup: /system.slice/jenkins.service
+
+sudo systemctl enable jenkins
+	#Expected output 
+			#	jenkins.service is not a native service, redirecting to /sbin/chkconfig.
+			#	Executing /sbin/chkconfig jenkins on
+			
+
+#Enable Port 8080
+sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+sudo firewall-cmd --reload
+
+# Launch Jenkins 
+# http://"your_ip_or_domain":8080
+
+#Default AdminPassword 
+	sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+	
+
+
