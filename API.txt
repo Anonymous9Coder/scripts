@@ -1,0 +1,19 @@
+Rest API
+Understand How Maven Works 
+Create a Jersey Project
+https://www.youtube.com/watch?v=TERMdBN4FxA&list=PLsyeobzWxl7ps4Z1C4VMtvZEx5-PgyoYI
+
+
+
+=========================================================================================
+
+https://www.youtube.com/watch?v=HHMj9NHC6Tc&list=PLf0Kt0-zrJjGsMUnaM3yghnN8HFBo9sQx
+
+JSON - JavaScript Object Notation
+- JSON syntax is for storing and exchanging data , Basically was designed for humanreadable 
+- written in text 
+- it has extended from the javascript scripting language
+- often used in AJAX 
+	- AJAX -- Single page applications
+- Used while writing JavaScript based applications that includes browser extensions and websites 
+- 

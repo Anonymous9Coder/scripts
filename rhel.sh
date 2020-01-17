@@ -120,12 +120,11 @@ chmod 777 /etc/yum.repos.d/localrepo.repo
 		
 # Mount CD and Copy the content into /mnt/iso
 		
+		
 		[localrepo]
 		name=localrepo
 		enabled=1
 		gpgcheck=0
 		baseurl=file:// <Path>
-
-
 yum repolist 
-#It should load 4300 + repolist
+			#It should load 4300 + repolist
